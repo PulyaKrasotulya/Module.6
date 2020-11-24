@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+h2 {
+    color: black;
+    border-bottom: 1px solid black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #c9a5c8;
+    /*#4f4db8;*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6rem;
+    align-items: center ;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*.news {
+	background-color: white;
+	padding: 50px 0 32px;
+}
+*/
+
+article {
+    width: 300px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid gray;
+    /*letter-spacing: 1rem;*/
+    /*text-transform: uppercase;*/
+}
+
+.block_news:nth-child(2n) {
+    /* color: #c9a5c8; */
+    background: #c9a5c8;
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+}
+
+/*article a:hover {
+	color: blue;
+}*/
+
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verfana, sans-serif;
+    margin-bottom: 5px;
+    /*letter-spacing: 1rem;*/
+    padding: 0;
+}
+
+.article-meta {
+    color: gray;
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    color: black;
+    background-color: gray;
+    background: url('https://images.unsplash.com/photo-1604743850334-deb359c13306?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80') bottom no-repeat;
+    /*background-size: cover;*/
+    background-position: center;
+    /* align-items: flex-start; */
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+    align-items: flex-end;
+}
+
+footer .links>a {
+    color: black;
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: #a1a1a1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.new_post::after {
+    content: "NEW";
+    font-size: 10px;
+    color: gold;
+    vertical-align: top;
+}
